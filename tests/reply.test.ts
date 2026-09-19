@@ -1,0 +1,1 @@
+import {replyForIntent} from '../src/services/reply-service';test('footer exists',()=>expect(replyForIntent('menu')).toContain('PT NEXOVONARSACORPORATION - All Right Reserved'));test('unknown is natural fallback',()=>expect(replyForIntent('unknown')).toContain('pesan Anda sudah kami terima'));
