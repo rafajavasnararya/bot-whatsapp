@@ -1,0 +1,1 @@
+export class WhatsAppClient{constructor(adapter){this.adapter=adapter;}async sendText(jid,text){return this.adapter.sendText(jid,text);}async setGroupMode(jid,mode){if(!['members','admins_only'].includes(mode))throw new Error('invalid group mode');return this.adapter.setGroupMode(jid,mode);}}
