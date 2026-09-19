@@ -1,0 +1,2 @@
+CREATE TABLE IF NOT EXISTS member_consents(member_id TEXT PRIMARY KEY,identity_processing INTEGER NOT NULL DEFAULT 0,social_account_processing INTEGER NOT NULL DEFAULT 0,purchase_history_processing INTEGER NOT NULL DEFAULT 0,consent_text_version TEXT NOT NULL,granted_at TEXT NOT NULL,revoked_at TEXT);
+CREATE TABLE IF NOT EXISTS private_document_refs(id TEXT PRIMARY KEY,member_id TEXT NOT NULL,kind TEXT NOT NULL,object_ref TEXT NOT NULL,sha256 TEXT NOT NULL,expires_at TEXT,deleted_at TEXT);
