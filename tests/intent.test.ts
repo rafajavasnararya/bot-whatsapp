@@ -1,0 +1,1 @@
+import {classifyIntent} from '../src/services/intent-router';test('purchase',()=>expect(classifyIntent('saya mau beli mod')).toBe('purchase'));test('price',()=>expect(classifyIntent('berapa harganya')).toBe('price'));test('member',()=>expect(classifyIntent('mau daftar member')).toBe('member'));
