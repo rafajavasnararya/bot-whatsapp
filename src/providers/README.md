@@ -1,0 +1,1 @@
+Provider adapters isolate WhatsApp vendor-specific behavior.
