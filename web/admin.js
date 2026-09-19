@@ -1,0 +1,1 @@
+async function loadAdmin(){const out=document.getElementById('admin');try{const r=await fetch('/health');out.textContent=JSON.stringify(await r.json(),null,2)}catch(e){out.textContent='Admin API belum tersambung.'}}loadAdmin();
