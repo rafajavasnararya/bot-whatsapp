@@ -1,0 +1,1 @@
+import{replyFor}from'../ai/replyEngine.js';import{config}from'../config.js';export async function messageHandler(message,send){const text=String(message.text||'').trim();const reply=await replyFor({text,brand:message.brand||config.brands[0]});await send({text:reply+'\n\n'+config.footer});}
