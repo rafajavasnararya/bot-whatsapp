@@ -1,0 +1,2 @@
+function shouldClose(hour:number){return hour===23}function shouldOpen(hour:number){return hour===5}
+test('23 WIB closes',()=>expect(shouldClose(23)).toBe(true));test('05 WIB opens',()=>expect(shouldOpen(5)).toBe(true));
