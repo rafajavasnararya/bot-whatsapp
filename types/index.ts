@@ -1,0 +1,1 @@
+export type Brand='Nararya Studio'|'Nararya Garage'|'Nararya Store'|'Hilekros Products'|'NEXOVONARSA CORPORATION';export interface IncomingMessage{text:string;from:string;brand?:Brand;groupId?:string;}
