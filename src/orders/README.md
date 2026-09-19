@@ -1,0 +1,1 @@
+Order lifecycle, idempotency and purchase state belong here.
