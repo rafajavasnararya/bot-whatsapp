@@ -1,0 +1,1 @@
+export const config=Object.freeze({port:Number(process.env.PORT||8080),timezone:process.env.TZ||'Asia/Jakarta',db:process.env.DATABASE_PATH||'./data/app.sqlite',footer:'PT NEXOVONARSACORPORATION - All Right Reserved',brands:['Nararya Studio','Nararya Garage','Nararya Store','Hilekros Products','NEXOVONARSA CORPORATION'],closeHour:23,openHour:5});
