@@ -1,0 +1,2 @@
+CREATE TABLE IF NOT EXISTS finance_entries(id TEXT PRIMARY KEY,brand TEXT NOT NULL,order_id TEXT,type TEXT NOT NULL,amount INTEGER NOT NULL,note TEXT,created_at TEXT NOT NULL);
+CREATE INDEX IF NOT EXISTS idx_finance_brand ON finance_entries(brand);CREATE INDEX IF NOT EXISTS idx_finance_order ON finance_entries(order_id);
