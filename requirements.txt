@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+cryptography
+openpyxl
+python-docx
+pillow
+pydantic
+python-multipart
+pytest
