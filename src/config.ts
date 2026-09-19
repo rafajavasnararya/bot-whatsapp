@@ -1,0 +1,3 @@
+import 'dotenv/config';
+export const config={port:Number(process.env.PORT||3000),timezone:'Asia/Jakarta',footer:'PT NEXOVONARSACORPORATION - All Right Reserved',adminNumbers:(process.env.ADMIN_NUMBERS||'').split(',').filter(Boolean),approvedOnly:true,closeHour:23,reopenHour:5};
+export const brands=['Nararya Garage','Nararya Studio','Hilekros Products','Nararya Store','NEXOVONARSA Corporation'] as const;
