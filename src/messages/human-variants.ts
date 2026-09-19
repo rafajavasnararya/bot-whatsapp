@@ -1,0 +1,2 @@
+export const humanVariants={received:['Pesannya sudah masuk, kami cek dulu ya.','Siap, sudah kami terima. Kami bantu cek satu per satu.','Noted, detailnya sudah kami terima. Mohon tunggu sebentar.'],delay:['Mohon ditunggu sebentar ya, chat sedang kami proses satu per satu.','Kami sedang cek detailnya. Terima kasih sudah menunggu.']};
+export function pickVariant(list:string[],seed=0){return list[Math.abs(seed)%list.length];}
