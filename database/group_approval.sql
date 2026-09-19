@@ -1,0 +1,2 @@
+CREATE TABLE IF NOT EXISTS approved_chats(chat_id TEXT PRIMARY KEY,approved_by TEXT NOT NULL,approved_at TEXT NOT NULL,active INTEGER NOT NULL DEFAULT 1);
+CREATE TABLE IF NOT EXISTS admin_confirmations(id INTEGER PRIMARY KEY AUTOINCREMENT,chat_id TEXT NOT NULL,action TEXT NOT NULL,status TEXT NOT NULL,requested_at TEXT NOT NULL,decided_at TEXT,decided_by TEXT);
