@@ -1,0 +1,12 @@
+# Deployment checklist
+- Node.js and Python dependencies installed.
+- Generate NARARYA_DATA_KEY with a secure secret manager.
+- Keep sessions/ and private data outside Git.
+- Pair WhatsApp using Linked Devices QR.
+- Promote the bot to admin only in groups that are explicitly approved.
+- Configure the real channel destination only after confirming provider support.
+- Configure Google Drive OAuth and persist stable file IDs.
+- Run unit tests and a live smoke test before production.
+- Confirm Asia/Jakarta timezone on the host.
+- Verify 23:00 restriction and 05:00 reopening on a test group.
+- Verify purchase events are idempotent before enabling receipt publishing.
