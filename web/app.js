@@ -1,0 +1,3 @@
+const brands=['Nararya Garage','Nararya Studio','Hilekros Products','Nararya Store','NEXOVONARSA Corporation'];
+document.getElementById('brands').innerHTML=brands.map(b=>'<article class="brand"><h2>'+b+'</h2><p class="muted">CS & automation aktif melalui gateway yang dikonfigurasi.</p></article>').join('');
+fetch('/health').then(r=>r.json()).then(x=>document.getElementById('status').textContent=JSON.stringify(x,null,2)).catch(()=>document.getElementById('status').textContent='Gateway belum tersambung.');
