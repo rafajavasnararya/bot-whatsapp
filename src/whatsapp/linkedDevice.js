@@ -1,0 +1,1 @@
+export function linkedDeviceChecklist(){return['Use a supported linked-device/session mechanism.','Show pairing only to authorized operators.','Keep session credentials outside Git.','Never log OTPs or authentication secrets.'];}
