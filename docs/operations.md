@@ -1,0 +1,2 @@
+# Operations
+Use a supported linked-device flow. Approve groups manually before automation acts on them. Keep credentials outside Git. Generate sales, finance, purchase and member reports separately. Schedule admin-only group mode at 23:00 WIB and restore at 05:00 WIB. Treat image authenticity classification as advisory and require human review.
