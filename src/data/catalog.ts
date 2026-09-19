@@ -1,0 +1,2 @@
+export const catalog={'Nararya Garage':['Kodename','Mod Request','ACC Pack','Karoseri'],'Nararya Studio':['3D Design','Strobo Animation','Mod Request','Livery'],'Hilekros Products':['Products','Digital Assets','Design Services'],'Nararya Store':['Store Products','Digital Items'],'NEXOVONARSA Corporation':['Corporate Services']};
+export function allCatalogItems(){return Object.values(catalog).flat();}
