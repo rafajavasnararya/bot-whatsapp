@@ -1,0 +1,2 @@
+export type CatalogCheck={matched:boolean;confidence:number;reason:string};
+export function checkCatalog(input:string,catalog:string[]):CatalogCheck{const n=input.toLowerCase().trim();if(catalog.some(x=>x.toLowerCase()===n))return{matched:true,confidence:1,reason:'exact catalog match'};if(catalog.some(x=>x.toLowerCase().includes(n)||n.includes(x.toLowerCase())))return{matched:true,confidence:.75,reason:'partial match; verify price/version manually'};return{matched:false,confidence:0,reason:'not found; manual review required'};}
