@@ -1,0 +1,3 @@
+export type Intent='menu'|'price'|'purchase'|'member'|'status'|'admin'|'unknown';
+const rules:Array<[Intent,RegExp]>=[['menu',/menu|katalog|produk|layanan/i],['price',/harga|price|berapa|biaya|rp\.?/i],['purchase',/beli|order|pesan|checkout|bayar/i],['member',/member|daftar|registrasi|akun/i],['status',/status|proses|pesanan|order.*mana/i],['admin',/admin|grup|channel|tutup|buka/i]];
+export function classifyIntent(text:string):Intent{for(const[r,p]of rules)if(p.test(text))return r;return'unknown';}
